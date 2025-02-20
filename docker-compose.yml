@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  frontend:
+    container_name: frontend-container
+    ports:
+      - "3000:3000"
+    image: vijikalavarkar/ecommerce:v1
+
+
+  backend:
+    container_name: backend-container
+    ports:
+      - "27017:27017"
+    image: mongo
